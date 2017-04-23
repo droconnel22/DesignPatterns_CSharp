@@ -1,0 +1,6 @@
+C:\CodeWars\ProjectEuler.CSharp.Console\bin\Debug\ProjectEuler.CSharp.Console.exe.config
+C:\CodeWars\ProjectEuler.CSharp.Console\bin\Debug\ProjectEuler.CSharp.Console.exe
+C:\CodeWars\ProjectEuler.CSharp.Console\bin\Debug\ProjectEuler.CSharp.Console.pdb
+C:\CodeWars\ProjectEuler.CSharp.Console\obj\Debug\ProjectEuler.CSharp.Console.csprojResolveAssemblyReference.cache
+C:\CodeWars\ProjectEuler.CSharp.Console\obj\Debug\ProjectEuler.CSharp.Console.exe
+C:\CodeWars\ProjectEuler.CSharp.Console\obj\Debug\ProjectEuler.CSharp.Console.pdb

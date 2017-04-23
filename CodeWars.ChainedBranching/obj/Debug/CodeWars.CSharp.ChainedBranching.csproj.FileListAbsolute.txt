@@ -1,0 +1,7 @@
+C:\CodeWars\CodeWars.ChainedBranching\bin\Debug\CodeWars.ChainedBranching.dll
+C:\CodeWars\CodeWars.ChainedBranching\bin\Debug\CodeWars.ChainedBranching.pdb
+C:\CodeWars\CodeWars.ChainedBranching\bin\Debug\CodeWars.FlexibilityDemo.dll
+C:\CodeWars\CodeWars.ChainedBranching\bin\Debug\CodeWars.FlexibilityDemo.pdb
+C:\CodeWars\CodeWars.ChainedBranching\obj\Debug\CodeWars.CSharp.ChainedBranching.csprojResolveAssemblyReference.cache
+C:\CodeWars\CodeWars.ChainedBranching\obj\Debug\CodeWars.ChainedBranching.dll
+C:\CodeWars\CodeWars.ChainedBranching\obj\Debug\CodeWars.ChainedBranching.pdb

@@ -1,0 +1,5 @@
+C:\CodeWars\CodeWars.FlexibilityDemo\bin\Debug\CodeWars.FlexibilityDemo.dll
+C:\CodeWars\CodeWars.FlexibilityDemo\bin\Debug\CodeWars.FlexibilityDemo.pdb
+C:\CodeWars\CodeWars.FlexibilityDemo\obj\Debug\CodeWars.FlexibilityDemo.csprojResolveAssemblyReference.cache
+C:\CodeWars\CodeWars.FlexibilityDemo\obj\Debug\CodeWars.FlexibilityDemo.dll
+C:\CodeWars\CodeWars.FlexibilityDemo\obj\Debug\CodeWars.FlexibilityDemo.pdb

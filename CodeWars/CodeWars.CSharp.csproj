@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94269C25-D3B7-4F69-9437-3D8E1DC00746}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeWars</RootNamespace>
+    <AssemblyName>CodeWars</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeWars.CSharp.AlgebraKata\Algebra.cs" />
+    <Compile Include="CodeWars.CSharp.AlgebraKata\KPrimeNaturalNumberChallenge.cs" />
+    <Compile Include="CodeWars.CSharp.Arrays\MergeSort.cs" />
+    <Compile Include="CodeWars.CSharp.Arrays\QuickSort.cs" />
+    <Compile Include="CodeWars.CSharp.Arrays\Shifted_Array.cs" />
+    <Compile Include="CodeWars.CSharp.Arrays\TicTacToeChecker.cs" />
+    <Compile Include="CodeWars.CSharp.Concurrency\SingleThreadBenchmark.cs" />
+    <Compile Include="CodeWars.CSharp.DataStructures\BST\BinaryTree.cs" />
+    <Compile Include="CodeWars.CSharp.DataStructures\BST\IBinaryTree.cs" />
+    <Compile Include="CodeWars.CSharp.DataStructures\BST\INode.cs" />
+    <Compile Include="CodeWars.CSharp.DataStructures\BST\Node.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\AppendAndDelete.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\CoinChallenge.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\ConverterDemo.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\Human_Readable_Time.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\InserationSort.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\InterviewChallenges.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\LeetSepak.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\LibraryFine.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\PatternCraft.Decorator.cs" />
+    <Compile Include="CodeWars.CSharp.Misc\SortByStringLength.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\CalculateAreaOfCircle.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\CompleteThePattern2.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\CountOddFibonacci.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\HelpYourGranny.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\PrimeFibonacci.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\SumByFactors.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\VowelCount.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\CandyProblem.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\CompleteThePatterncs.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\HighestandLowest.cs" />
+    <Compile Include="CodeWars.CSharp.Numbers\WatermelonProblem.cs" />
+    <Compile Include="CodeWars.CSharp.Strings\Captial_FirstLetter_StringArray.cs" />
+    <Compile Include="CodeWars.CSharp.Strings\TextAlignJustifyChallenge.cs" />
+    <Compile Include="CodeWars.CSharp.Strings\ValidateUserName_UsingRegex.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

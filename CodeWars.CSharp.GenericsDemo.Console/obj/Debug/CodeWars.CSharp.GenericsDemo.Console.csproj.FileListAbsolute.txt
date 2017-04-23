@@ -1,0 +1,6 @@
+C:\CodeWars\CodeWars.CSharp.GenericsDemo.Console\bin\Debug\CodeWars.CSharp.GenericsDemo.Console.exe.config
+C:\CodeWars\CodeWars.CSharp.GenericsDemo.Console\bin\Debug\CodeWars.CSharp.GenericsDemo.Console.exe
+C:\CodeWars\CodeWars.CSharp.GenericsDemo.Console\bin\Debug\CodeWars.CSharp.GenericsDemo.Console.pdb
+C:\CodeWars\CodeWars.CSharp.GenericsDemo.Console\obj\Debug\CodeWars.CSharp.GenericsDemo.Console.csprojResolveAssemblyReference.cache
+C:\CodeWars\CodeWars.CSharp.GenericsDemo.Console\obj\Debug\CodeWars.CSharp.GenericsDemo.Console.exe
+C:\CodeWars\CodeWars.CSharp.GenericsDemo.Console\obj\Debug\CodeWars.CSharp.GenericsDemo.Console.pdb

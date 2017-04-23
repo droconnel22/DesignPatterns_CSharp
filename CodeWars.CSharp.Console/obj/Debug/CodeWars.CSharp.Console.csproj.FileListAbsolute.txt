@@ -1,0 +1,5 @@
+C:\CodeWars\CodeWars.CSharp.Console\bin\Debug\CodeWars.CSharp.Console.exe.config
+C:\CodeWars\CodeWars.CSharp.Console\bin\Debug\CodeWars.CSharp.Console.exe
+C:\CodeWars\CodeWars.CSharp.Console\bin\Debug\CodeWars.CSharp.Console.pdb
+C:\CodeWars\CodeWars.CSharp.Console\obj\Debug\CodeWars.CSharp.Console.exe
+C:\CodeWars\CodeWars.CSharp.Console\obj\Debug\CodeWars.CSharp.Console.pdb

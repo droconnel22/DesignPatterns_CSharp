@@ -1,0 +1,6 @@
+﻿<div class="form-group">
+    <select name="State" ng-required="true" ng-model="shipBobOrderModel.OrderAddress.State" ng-options="state for state in stateList" class="form-control"></select>
+    <div ng-show="shipBobOrderForm.State.$dirty &&  shipBobOrderForm.State.$invalid">
+        <p ng-show="shipBobOrderForm.State.$error.required">State is required.</p>
+    </div>
+</div>

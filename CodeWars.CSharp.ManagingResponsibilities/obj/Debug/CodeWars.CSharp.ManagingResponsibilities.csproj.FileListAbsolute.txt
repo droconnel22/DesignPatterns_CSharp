@@ -1,0 +1,11 @@
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\CodeWars.CSharp.ManagingResponsibilities.dll
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\CodeWars.CSharp.ManagingResponsibilities.pdb
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\Microsoft.Practices.Unity.dll
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\Microsoft.Practices.Unity.xml
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\obj\Debug\CodeWars.CSharp.ManagingResponsibilities.csprojResolveAssemblyReference.cache
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\obj\Debug\CodeWars.CSharp.ManagingResponsibilities.dll
+C:\CodeWars\CodeWars.CSharp.ManagingResponsibilities\obj\Debug\CodeWars.CSharp.ManagingResponsibilities.pdb

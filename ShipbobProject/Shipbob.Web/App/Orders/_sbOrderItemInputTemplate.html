@@ -1,0 +1,30 @@
+﻿<div class="row">
+    <br/>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div ng-show="orderModel.Items.length > 0" ng-repeat="orderItem in orderModel.Items">
+            <div class="row">
+                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                    <br />
+                    <input class="form-control" type="text" readonly="readonly" value="{{orderItem.ItemType}}"/>
+                    <br/>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <button type="button" ng-click="removeItemFromList(orderItem)" class="btn btn-property-stats-action"> <i class="fa fa-minus"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                <select ng-model="currentOrderItem"  ng-options="availableItem as availableItem.label()  for availableItem in availableItems" class="form-control"></select>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                <button type="button" ng-click="currentOrderItem.OnAdd(currentOrderItem)" class="btn btn-property-stats-action"> <i class="fa fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+
+    <br/>
+</div>
+

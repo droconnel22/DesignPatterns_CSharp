@@ -1,0 +1,153 @@
+﻿<div class="order-page-wrapper">
+    <div class="order-form-body">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <sb-inventory-display></sb-inventory-display>
+            </div>
+            <div ng-hide="isOrderSubmitted">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3>Enter Your Order</h3>
+                    <hr />
+                    <div class="row">
+                        <div ng-hide="isOrderFormWorking">
+                            <form id="shipBobOrderForm" name="shipBobOrderForm" ng-submit="submitShipBobOrder()" novalidate="">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text"
+                                               class="form-control"
+                                               ng-class="{'invalid-input': shipBobOrderForm.TrackingId.$invalid && shipBobOrderForm.TrackingId.$dirty, 'valid-input': shipBobOrderForm.TrackingId.$valid && shipBobOrderForm.TrackingId.$dirty}"
+                                               name="TrackingId"
+                                               placeholder="Enter a valid tracking Id"
+                                               ng-model="shipBobOrderModel.TrackingId"
+                                               ng-required="true"
+                                               ng-pattern="/^[a-zA-Z \'\.\-]+$/"
+                                               ng-maxlength="100"
+                                               ng-minlength="2" />
+                                        <div ng-show="shipBobOrderForm.TrackingId.$dirty && shipBobOrderForm.TrackingId.$invalid">
+                                            <p ng-show="shipBobOrderForm.TrackingId.$error.required">Tracking Id is required.</p>
+                                            <p ng-show="shipBobOrderForm.TrackingId.$error.pattern">Tracking Id is not valid.</p>
+                                            <p ng-show="shipBobOrderForm.TrackingId.$error.minlength">Tracking Id is too short, min 2 characters.</p>
+                                            <p ng-show="shipBobOrderForm.TrackingId.$error.maxlength">Tracking Id is too long, max 100 characters.</p>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text"
+                                               name="AddressName"
+                                               class="form-control"
+                                               ng-class="{'invalid-signup': shipBobOrderForm.AddressName.$invalid &&  shipBobOrderForm.AddressName.$dirty, 'valid-signup': shipBobOrderForm.AddressName.$valid &&  shipBobOrderForm.AddressName.$dirty}"
+                                               ng-required="true"
+                                               placeholder="Name for Address"
+                                               ng-model="shipBobOrderModel.OrderAddress.AddressName"
+                                               ng-pattern="/^[a-zA-Z \'\.\-]+$/"
+                                               ng-maxlength="100"
+                                               ng-minlength="2" />
+                                        <div ng-show="shipBobOrderForm.AddressName.$dirty &&  shipBobOrderForm.AddressName.$invalid">
+                                            <p ng-show="shipBobOrderForm.AddressName.$error.required">Name is required.</p>
+                                            <p ng-show="shipBobOrderForm.AddressName.$error.pattern">Name is not valid.</p>
+                                            <p ng-show="shipBobOrderForm.AddressName.$error.minlength">Name is too short, min 2 characters.</p>
+                                            <p ng-show="shipBobOrderForm.AddressName.$error.maxlength">Name is too long, max 100 characters.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="form-group">
+                                        <input type="text"
+                                               name="StreetAddress"
+                                               class="form-control"
+                                               ng-class="{'invalid-signup': shipBobOrderForm.StreetAddress.$invalid &&  shipBobOrderForm.StreetAddress.$dirty, 'valid-signup': shipBobOrderForm.StreetAddress.$valid &&  shipBobOrderForm.StreetAddress.$dirty}"
+                                               ng-required="true"
+                                               placeholder="123 Fake Street"
+                                               ng-model="shipBobOrderModel.OrderAddress.StreetAddress"
+                                               ng-pattern="/^[a-zA-Z0-9 \'\.\-]+$/"
+                                               ng-maxlength="100"
+                                               ng-minlength="2" />
+                                        <div ng-show="shipBobOrderForm.StreetAddress.$dirty &&  shipBobOrderForm.StreetAddress.$invalid">
+                                            <p ng-show="shipBobOrderForm.StreetAddress.$error.required">Street Address is required.</p>
+                                            <p ng-show="shipBobOrderForm.StreetAddress.$error.pattern">Street Address is not valid.</p>
+                                            <p ng-show="shipBobOrderForm.StreetAddress.$error.minlength">Street Address is too short, min 2 characters.</p>
+                                            <p ng-show="shipBobOrderForm.StreetAddress.$error.maxlength">Street Address is too long, max 100 characters.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="row">
+                                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                            <div class="form-group">
+                                                <input type="text"
+                                                       name="City"
+                                                       class="form-control"
+                                                       ng-class="{'invalid-signup': shipBobOrderForm.City.$invalid &&  shipBobOrderForm.City.$dirty, 'valid-signup': shipBobOrderForm.City.$valid &&  shipBobOrderForm.City.$dirty}"
+                                                       ng-required="true"
+                                                       placeholder="City"
+                                                       ng-model="shipBobOrderModel.OrderAddress.City"
+                                                       ng-pattern="/^[a-zA-Z \'\.\-]+$/"
+                                                       ng-maxlength="100"
+                                                       ng-minlength="2" />
+                                                <div ng-show="shipBobOrderForm.City.$dirty &&  shipBobOrderForm.City.$invalid">
+                                                    <p ng-show="shipBobOrderForm.City.$error.required">City is required.</p>
+                                                    <p ng-show="shipBobOrderForm.City.$error.pattern">City is not valid.</p>
+                                                    <p ng-show="shipBobOrderForm.City.$error.minlength">City is too short, min 2 characters.</p>
+                                                    <p ng-show="shipBobOrderForm.City.$error.maxlength">City is too long, max 100 characters.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                            <div sb-state-list></div>
+                                        </div>
+                                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                                            <div class="form-group">
+                                                <input type="text"
+                                                       name="ZipCode"
+                                                       class="form-control"
+                                                       ng-class="{'invalid-signup': shipBobOrderForm.ZipCode.$invalid &&  shipBobOrderForm.ZipCode.$dirty, 'valid-signup': shipBobOrderForm.ZipCode.$valid &&  shipBobOrderForm.ZipCode.$dirty}"
+                                                       ng-required="true"
+                                                       placeholder="5 Digit ZipCode"
+                                                       ng-model="shipBobOrderModel.OrderAddress.ZipCode"
+                                                       ng-pattern="/^(\d{5}(-\d{4})?|[A-Z]\d[A-Z] *\d[A-Z]\d)$/"
+                                                       ng-maxlength="5"
+                                                       ng-minlength="5" />
+                                                <div ng-show="shipBobOrderForm.ZipCode.$dirty &&  shipBobOrderForm.ZipCode.$invalid">
+                                                    <p ng-show="shipBobOrderForm.ZipCode.$error.required">Zip Code is required.</p>
+                                                    <p ng-show="shipBobOrderForm.ZipCode.$error.pattern">Zip Code is not valid.</p>
+                                                    <p ng-show="shipBobOrderForm.ZipCode.$error.minlength">Zip Code is too short, min 5 numbers.</p>
+                                                    <p ng-show="shipBobOrderForm.ZipCode.$error.maxlength">Zip Code is too long, max 5 numbers.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <sb-order-item-input order-model="shipBobOrderModel"></sb-order-item-input>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-offset-9 col-md-3 col-lg-offset-9 col-lg-3">
+                                    <div class="form-group">
+                                        <br/>
+                                        <input type="submit" ng-disabled="shipBobOrderForm.$invalid" class="btn btn-info btn-lg" value="Place Order"/>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div ng-show="message">
+                                    <h4>Sorry, {{message}}. </h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div ng-show="isOrderFormWorking">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                <h1>Order Is Being Submitted...</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-show="isOrderSubmitted">
+                <h1>{{message}}</h1>
+            </div>
+        
+        </div>
+    </div>
+</div>

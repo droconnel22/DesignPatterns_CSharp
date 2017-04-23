@@ -1,0 +1,9 @@
+C:\CodeWars\ProjectEuler.CSharp.Tests\bin\Debug\ProjectEuler.CSharp.Tests.dll
+C:\CodeWars\ProjectEuler.CSharp.Tests\bin\Debug\ProjectEuler.CSharp.Tests.pdb
+C:\CodeWars\ProjectEuler.CSharp.Tests\bin\Debug\nunit.framework.dll
+C:\CodeWars\ProjectEuler.CSharp.Tests\bin\Debug\ProjectEuler.CSharp.dll
+C:\CodeWars\ProjectEuler.CSharp.Tests\bin\Debug\ProjectEuler.CSharp.pdb
+C:\CodeWars\ProjectEuler.CSharp.Tests\bin\Debug\nunit.framework.xml
+C:\CodeWars\ProjectEuler.CSharp.Tests\obj\Debug\ProjectEuler.CSharp.Tests.csprojResolveAssemblyReference.cache
+C:\CodeWars\ProjectEuler.CSharp.Tests\obj\Debug\ProjectEuler.CSharp.Tests.dll
+C:\CodeWars\ProjectEuler.CSharp.Tests\obj\Debug\ProjectEuler.CSharp.Tests.pdb

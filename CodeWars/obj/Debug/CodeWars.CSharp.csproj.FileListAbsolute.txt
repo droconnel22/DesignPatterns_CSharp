@@ -1,0 +1,6 @@
+C:\CodeWars\CodeWars\bin\Debug\CodeWars.dll.config
+C:\CodeWars\CodeWars\bin\Debug\CodeWars.dll
+C:\CodeWars\CodeWars\bin\Debug\CodeWars.pdb
+C:\CodeWars\CodeWars\obj\Debug\CodeWars.CSharp.csprojResolveAssemblyReference.cache
+C:\CodeWars\CodeWars\obj\Debug\CodeWars.dll
+C:\CodeWars\CodeWars\obj\Debug\CodeWars.pdb

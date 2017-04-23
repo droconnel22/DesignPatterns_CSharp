@@ -1,0 +1,188 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp", "CodeWars\CodeWars.CSharp.csproj", "{94269C25-D3B7-4F69-9437-3D8E1DC00746}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeWars.CSharp", "CodeWars.CSharp", "{F7668DE2-5BC3-41DF-8325-A152395D208E}"
+	ProjectSection(SolutionItems) = preProject
+		Wiki.txt = Wiki.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeWars.JavaScript", "CodeWars.JavaScript", "{0F32504F-AF8E-4991-AA0B-71BE01BB38AF}"
+	ProjectSection(SolutionItems) = preProject
+		Webpack.txt = Webpack.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeWars.Python", "CodeWars.Python", "{DF010B6B-828D-4E9E-97D8-D43F6B391D9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeWars.Php", "CodeWars.Php", "{F04697DA-67D5-4BFC-A2E9-A56B64E94B29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp.Tests", "CodeWars.CSharp.Tests\CodeWars.CSharp.Tests.csproj", "{3AC5003B-D947-4270-B6A2-E8C39D719FEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp.ZeroMQ", "CodeWars.CSharp.ZeroMQ\CodeWars.CSharp.ZeroMQ.csproj", "{6306426C-534C-49DA-B9BF-8B42671F3D9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectEuler", "ProjectEuler", "{7852D934-FA22-4ECC-8804-61DB8BE612C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.CSharp", "ProjectEuler.CSharp\ProjectEuler.CSharp.csproj", "{1E16460E-69DF-4190-92B5-F70F20C10B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.CSharp.Console", "ProjectEuler.CSharp.Console\ProjectEuler.CSharp.Console.csproj", "{42F75F4E-AF2C-4A5A-8FD5-8C78C58CDCDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp.Console", "CodeWars.CSharp.Console\CodeWars.CSharp.Console.csproj", "{61E52084-9568-4D3F-A51B-8DF6CAE93050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.CSharp.Tests", "ProjectEuler.CSharp.Tests\ProjectEuler.CSharp.Tests.csproj", "{85A75B1A-FEB4-4AB5-AD43-80FF05305A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp.GenericsDemo.Console", "CodeWars.CSharp.GenericsDemo.Console\CodeWars.CSharp.GenericsDemo.Console.csproj", "{AE9C10EE-8FB1-4660-8325-750D3623634A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.ObjectOriented.Console", "CodeWars.ObjectOriented.Console\CodeWars.ObjectOriented.Console.csproj", "{A1D268E2-BBC6-4CB4-8014-40DA3473B413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.FlexibilityDemo", "CodeWars.FlexibilityDemo\CodeWars.FlexibilityDemo.csproj", "{68037D20-ECA2-4D6D-9B39-A9E182A6481E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{19094378-DB30-44D1-9EFB-A181E653B2C3}"
+	ProjectSection(SolutionItems) = preProject
+		Wiki.txt = Wiki.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp.ChainedBranching", "CodeWars.ChainedBranching\CodeWars.CSharp.ChainedBranching.csproj", "{FC4EDFFB-C53D-4207-BFA8-D441D3A80905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp.UnderstandingConstructors", "CodeWars.CSharp.UnderstandingConstructors\CodeWars.CSharp.UnderstandingConstructors.csproj", "{734266A3-74FD-46CC-9D42-F5F8E200E760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWars.CSharp.ManagingResponsibilities", "CodeWars.CSharp.ManagingResponsibilities\CodeWars.CSharp.ManagingResponsibilities.csproj", "{2FAA5475-9DD1-40AE-ABD9-22E0172DA972}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94269C25-D3B7-4F69-9437-3D8E1DC00746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94269C25-D3B7-4F69-9437-3D8E1DC00746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94269C25-D3B7-4F69-9437-3D8E1DC00746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94269C25-D3B7-4F69-9437-3D8E1DC00746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AC5003B-D947-4270-B6A2-E8C39D719FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AC5003B-D947-4270-B6A2-E8C39D719FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AC5003B-D947-4270-B6A2-E8C39D719FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AC5003B-D947-4270-B6A2-E8C39D719FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6306426C-534C-49DA-B9BF-8B42671F3D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6306426C-534C-49DA-B9BF-8B42671F3D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6306426C-534C-49DA-B9BF-8B42671F3D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6306426C-534C-49DA-B9BF-8B42671F3D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E16460E-69DF-4190-92B5-F70F20C10B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E16460E-69DF-4190-92B5-F70F20C10B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E16460E-69DF-4190-92B5-F70F20C10B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E16460E-69DF-4190-92B5-F70F20C10B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F75F4E-AF2C-4A5A-8FD5-8C78C58CDCDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F75F4E-AF2C-4A5A-8FD5-8C78C58CDCDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F75F4E-AF2C-4A5A-8FD5-8C78C58CDCDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F75F4E-AF2C-4A5A-8FD5-8C78C58CDCDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61E52084-9568-4D3F-A51B-8DF6CAE93050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61E52084-9568-4D3F-A51B-8DF6CAE93050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61E52084-9568-4D3F-A51B-8DF6CAE93050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61E52084-9568-4D3F-A51B-8DF6CAE93050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85A75B1A-FEB4-4AB5-AD43-80FF05305A6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85A75B1A-FEB4-4AB5-AD43-80FF05305A6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85A75B1A-FEB4-4AB5-AD43-80FF05305A6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85A75B1A-FEB4-4AB5-AD43-80FF05305A6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE9C10EE-8FB1-4660-8325-750D3623634A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE9C10EE-8FB1-4660-8325-750D3623634A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE9C10EE-8FB1-4660-8325-750D3623634A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE9C10EE-8FB1-4660-8325-750D3623634A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D268E2-BBC6-4CB4-8014-40DA3473B413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D268E2-BBC6-4CB4-8014-40DA3473B413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D268E2-BBC6-4CB4-8014-40DA3473B413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D268E2-BBC6-4CB4-8014-40DA3473B413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68037D20-ECA2-4D6D-9B39-A9E182A6481E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68037D20-ECA2-4D6D-9B39-A9E182A6481E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68037D20-ECA2-4D6D-9B39-A9E182A6481E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68037D20-ECA2-4D6D-9B39-A9E182A6481E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4EDFFB-C53D-4207-BFA8-D441D3A80905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4EDFFB-C53D-4207-BFA8-D441D3A80905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4EDFFB-C53D-4207-BFA8-D441D3A80905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4EDFFB-C53D-4207-BFA8-D441D3A80905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734266A3-74FD-46CC-9D42-F5F8E200E760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734266A3-74FD-46CC-9D42-F5F8E200E760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734266A3-74FD-46CC-9D42-F5F8E200E760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734266A3-74FD-46CC-9D42-F5F8E200E760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FAA5475-9DD1-40AE-ABD9-22E0172DA972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FAA5475-9DD1-40AE-ABD9-22E0172DA972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FAA5475-9DD1-40AE-ABD9-22E0172DA972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FAA5475-9DD1-40AE-ABD9-22E0172DA972}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{94269C25-D3B7-4F69-9437-3D8E1DC00746} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{3AC5003B-D947-4270-B6A2-E8C39D719FEB} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{6306426C-534C-49DA-B9BF-8B42671F3D9A} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{1E16460E-69DF-4190-92B5-F70F20C10B27} = {7852D934-FA22-4ECC-8804-61DB8BE612C5}
+		{42F75F4E-AF2C-4A5A-8FD5-8C78C58CDCDF} = {7852D934-FA22-4ECC-8804-61DB8BE612C5}
+		{61E52084-9568-4D3F-A51B-8DF6CAE93050} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{85A75B1A-FEB4-4AB5-AD43-80FF05305A6F} = {7852D934-FA22-4ECC-8804-61DB8BE612C5}
+		{AE9C10EE-8FB1-4660-8325-750D3623634A} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{A1D268E2-BBC6-4CB4-8014-40DA3473B413} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{68037D20-ECA2-4D6D-9B39-A9E182A6481E} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{FC4EDFFB-C53D-4207-BFA8-D441D3A80905} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{734266A3-74FD-46CC-9D42-F5F8E200E760} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+		{2FAA5475-9DD1-40AE-ABD9-22E0172DA972} = {F7668DE2-5BC3-41DF-8325-A152395D208E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 14
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://droconnel22.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CodeWars.CSharp.Tests\\CodeWars.CSharp.Tests.csproj
+		SccProjectTopLevelParentUniqueName1 = CodeWars.sln
+		SccProjectName1 = CodeWars.CSharp.Tests
+		SccLocalPath1 = CodeWars.CSharp.Tests
+		SccProjectUniqueName2 = CodeWars\\CodeWars.CSharp.csproj
+		SccProjectTopLevelParentUniqueName2 = CodeWars.sln
+		SccProjectName2 = CodeWars
+		SccLocalPath2 = CodeWars
+		SccProjectUniqueName3 = CodeWars.CSharp.ZeroMQ\\CodeWars.CSharp.ZeroMQ.csproj
+		SccProjectTopLevelParentUniqueName3 = CodeWars.sln
+		SccProjectName3 = CodeWars.CSharp.ZeroMQ
+		SccLocalPath3 = CodeWars.CSharp.ZeroMQ
+		SccProjectUniqueName4 = ProjectEuler.CSharp\\ProjectEuler.CSharp.csproj
+		SccProjectTopLevelParentUniqueName4 = CodeWars.sln
+		SccProjectName4 = ProjectEuler.CSharp
+		SccLocalPath4 = ProjectEuler.CSharp
+		SccProjectUniqueName5 = ProjectEuler.CSharp.Console\\ProjectEuler.CSharp.Console.csproj
+		SccProjectTopLevelParentUniqueName5 = CodeWars.sln
+		SccProjectName5 = ProjectEuler.CSharp.Console
+		SccLocalPath5 = ProjectEuler.CSharp.Console
+		SccProjectUniqueName6 = CodeWars.CSharp.Console\\CodeWars.CSharp.Console.csproj
+		SccProjectTopLevelParentUniqueName6 = CodeWars.sln
+		SccProjectName6 = CodeWars.CSharp.Console
+		SccLocalPath6 = CodeWars.CSharp.Console
+		SccProjectUniqueName7 = ProjectEuler.CSharp.Tests\\ProjectEuler.CSharp.Tests.csproj
+		SccProjectTopLevelParentUniqueName7 = CodeWars.sln
+		SccProjectName7 = ProjectEuler.CSharp.Tests
+		SccLocalPath7 = ProjectEuler.CSharp.Tests
+		SccProjectUniqueName8 = CodeWars.CSharp.GenericsDemo.Console\\CodeWars.CSharp.GenericsDemo.Console.csproj
+		SccProjectTopLevelParentUniqueName8 = CodeWars.sln
+		SccProjectName8 = CodeWars.CSharp.GenericsDemo.Console
+		SccLocalPath8 = CodeWars.CSharp.GenericsDemo.Console
+		SccProjectUniqueName9 = CodeWars.ObjectOriented.Console\\CodeWars.ObjectOriented.Console.csproj
+		SccProjectTopLevelParentUniqueName9 = CodeWars.sln
+		SccProjectName9 = CodeWars.ObjectOriented.Console
+		SccLocalPath9 = CodeWars.ObjectOriented.Console
+		SccProjectUniqueName10 = CodeWars.FlexibilityDemo\\CodeWars.FlexibilityDemo.csproj
+		SccProjectTopLevelParentUniqueName10 = CodeWars.sln
+		SccProjectName10 = CodeWars.FlexibilityDemo
+		SccLocalPath10 = CodeWars.FlexibilityDemo
+		SccProjectUniqueName11 = CodeWars.ChainedBranching\\CodeWars.CSharp.ChainedBranching.csproj
+		SccProjectTopLevelParentUniqueName11 = CodeWars.sln
+		SccProjectName11 = CodeWars.ChainedBranching
+		SccLocalPath11 = CodeWars.ChainedBranching
+		SccProjectUniqueName12 = CodeWars.CSharp.UnderstandingConstructors\\CodeWars.CSharp.UnderstandingConstructors.csproj
+		SccProjectTopLevelParentUniqueName12 = CodeWars.sln
+		SccProjectName12 = CodeWars.CSharp.UnderstandingConstructors
+		SccLocalPath12 = CodeWars.CSharp.UnderstandingConstructors
+		SccProjectUniqueName13 = CodeWars.CSharp.ManagingResponsibilities\\CodeWars.CSharp.ManagingResponsibilities.csproj
+		SccProjectTopLevelParentUniqueName13 = CodeWars.sln
+		SccProjectName13 = CodeWars.CSharp.ManagingResponsibilities
+		SccLocalPath13 = CodeWars.CSharp.ManagingResponsibilities
+	EndGlobalSection
+EndGlobal

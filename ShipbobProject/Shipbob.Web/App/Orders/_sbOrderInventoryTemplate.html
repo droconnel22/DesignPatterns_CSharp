@@ -1,0 +1,18 @@
+﻿<div class="row">
+    <div ng-repeat="itemInventory in InventoryCounts">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <div ng-show="itemInventory.Item2 > 10">
+                {{itemInventory.Item2}} {{itemInventory.Item1}}'s Available
+            </div>
+            <div ng-show="itemInventory.Item2 <= 10 && itemInventory.Item2 > 1">
+                Only {{currentInventory.BaseBallCount}} {{itemInventory.Item1}}'s Left!
+            </div>
+            <div ng-show="itemInventory.Item2 === 1">
+                Only {{itemInventory.Item2}} {{itemInventory.Item1}} Left! Hurry!!
+            </div>
+            <div ng-show="itemInventory.Item2 === 0">
+                Sorry No More {{itemInventory.Item1}} Available
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+ShipBob Software Quiz
+
+https://d2mxuefqeaa7sj.cloudfront.net/s_BF4B8F74A987336E396555443FA0C4EFF079B7EDC7458A3705ABA4C8AC7705D8_1479944925323_file.png
+
+
+Create a Database Layer, service layer, Business Logic Layer, Data Access Layer with the following requirements.
+
+1. Create Orders Page
+
+ We need a simple UI page which allows you to create new order with the required inputs of :
+
+     a. input of a string called TrackingId 
+     b.  Address {Name, Street Address, City, State, ZipCode}
+     c.  Items in the order: Each order will have  some products associated with it.  For example, an order can have 1 Red baseball and 1 Blue bat.
+
+The system will store an inventory of products such as 100 Red baseballs, 100 Blue Bats, and 100 White Hats.  While creating a order, the user simply  chooses from this list of products
+
+
+2.  Some products can also be classified as bundles. Each bundle is a collection of individual products. For example, while creating an order , if a customer enters a Baseball Bundle as an item, the order is actually broken down to contain individual items in the bundle like: 
+
+1 Red Baseball, 1 Blue Bat and 1 White Hat. 
+
+The goal of this project is to create a web application that accepts a new order and items associated with the order.  However, the if an order comes in as bundle, it should replace the bundle item with the actual items in the associated bundle.
+
+  
+
+Use Visual Studio, C#, MVC, SQL Server, AngularJS and present the code at the next meeting.

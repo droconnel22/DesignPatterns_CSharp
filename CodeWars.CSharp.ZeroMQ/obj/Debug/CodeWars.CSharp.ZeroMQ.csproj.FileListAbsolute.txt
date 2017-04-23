@@ -1,0 +1,7 @@
+C:\CodeWars\CodeWars.CSharp.ZeroMQ\bin\Debug\CodeWars.CSharp.ZeroMQ.exe.config
+C:\CodeWars\CodeWars.CSharp.ZeroMQ\bin\Debug\CodeWars.CSharp.ZeroMQ.exe
+C:\CodeWars\CodeWars.CSharp.ZeroMQ\bin\Debug\CodeWars.CSharp.ZeroMQ.pdb
+C:\CodeWars\CodeWars.CSharp.ZeroMQ\bin\Debug\ZeroMQ.dll
+C:\CodeWars\CodeWars.CSharp.ZeroMQ\obj\Debug\CodeWars.CSharp.ZeroMQ.csprojResolveAssemblyReference.cache
+C:\CodeWars\CodeWars.CSharp.ZeroMQ\obj\Debug\CodeWars.CSharp.ZeroMQ.exe
+C:\CodeWars\CodeWars.CSharp.ZeroMQ\obj\Debug\CodeWars.CSharp.ZeroMQ.pdb

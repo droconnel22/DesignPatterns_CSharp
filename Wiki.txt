@@ -1,0 +1,460 @@
+﻿#The question is "what is the difference between covariance and contravariance?"
+
+Covariance and contravariance are properties of a mapping function that associates one member of a set with another. More specifically, a mapping can be covariant or contravariant with respect to a relation on that set.
+
+Consider the following two subsets of the set of all C# types. First:
+
+{ Animal, 
+  Tiger, 
+  Fruit, 
+  Banana }.
+And second, this clearly related set:
+
+{ IEnumerable<Animal>, 
+  IEnumerable<Tiger>, 
+  IEnumerable<Fruit>, 
+  IEnumerable<Banana> }
+There is a mapping operation from the first set to the second set. That is, for each T in the first set, the corresponding type in the second set is IEnumerable<T>. Or, in short form, the mapping is T → IE<T>.
+
+With me so far?
+
+Now let's consider a relation. There is an assignment compatibility relationship between pairs of types in the first set. A value of type Tiger can be assigned to a variable of type Animal, so these types are said to be "assignment compatible". Let's write "a value of type X can be assigned to a variable of type Y" in a shorter form: X ⇒ Y. So in our first subset, here are all the assignment compatibility relationships:
+
+Tiger  ⇒ Tiger
+Tiger  ⇒ Animal
+Animal ⇒ Animal
+Banana ⇒ Banana
+Banana ⇒ Fruit
+Fruit  ⇒ Fruit
+In C# 4, which supports covariant assignment compatibility of certain interfaces, there is an assignment compatibility relationship between pairs of types in the second set:
+
+IE<Tiger>  ⇒ IE<Tiger>
+IE<Tiger>  ⇒ IE<Animal>
+IE<Animal> ⇒ IE<Animal>
+IE<Banana> ⇒ IE<Banana>
+IE<Banana> ⇒ IE<Fruit>
+IE<Fruit>  ⇒ IE<Fruit>
+Notice that the mapping T → IE<T> preserves the existence and direction of assignment compatibility. That is, if X ⇒ Y, then it is also true that IE<X> ⇒ IE<Y>.
+
+A mapping which has this property with respect to a particular relation is called a "covariant mapping". This should make sense: a sequence of Tigers can be used where a sequence of Animals is needed, but the opposite is not true. A sequence of animals cannot necessarily be used where a sequence of Tigers is needed.
+
+That's covariance. Now consider this subset of the set of all types:
+
+{ IComparable<Tiger>, 
+  IComparable<Animal>, 
+  IComparable<Fruit>, 
+  IComparable<Banana> }
+now we have the mapping from the first set to the third set T → IC<T>.
+
+In C# 4:
+
+IC<Tiger>  ⇒ IC<Tiger>
+IC<Animal> ⇒ IC<Tiger>     Backwards!
+IC<Animal> ⇒ IC<Animal>
+IC<Banana> ⇒ IC<Banana>
+IC<Fruit>  ⇒ IC<Banana>     Backwards!
+IC<Fruit>  ⇒ IC<Fruit>
+That is, the mapping T → IC<T> has preserved the existence but reversed the direction of assignment compatibility. That is, if X ⇒ Y, then IC<X> ⇐ IC<Y>.
+
+A mapping which preserves but reverses a relation is called a contravariant mapping.
+
+Again, this should be clearly correct. A device which can compare two Animals can also compare two Tigers, but a device which can compare two Tigers cannot necessarily compare any two Animals.
+
+So that's the difference between covariance and contravariance in C# 4. Covariance preserves the direction of assignability. Contravariance reverses it.
+
+
+
+
+
+
+#When to use IComparable<T> Vs. IComparer<T>
+
+Well they are not quite the same thing as IComparer<T> is implemented on a type that is capable of comparing two different objects while IComparable<T> is implemented on types that are able to compare themselves with other instances of the same type.
+
+I tend to use IComparable<T> for times when I need to know how another instance relates to this instance.  IComparer<T> is useful for sorting collections as the IComparer<T> stands outside of the comparison.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#What's the difference between IComparable & IEquatable interfaces?
+
+
+IEquatable tests whether two objects are equal.
+
+IComparable imposes a total ordering on the objects being compared.
+
+For example, IEquatable would tell you that 5 is not equal to 7.  IComparable would tell you that 5 comes before 7.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Comparison between List, IList and IEnumerable
+
+
+
+IEnumerable<T> is the base interface that the following extend or implement. 
+
+It doesn't allow for direct access and is readonly. So use this only if you intend to iterate over the collection.
+
+ICollection<T> extendsIEnumerable<T> but in addition allows for adding, removing, testing whether an element is present in the collection and getting the total number of elements. 
+It doesn't allow for directly accessing an element by index. That would be an O(n) operation as you need to start iterating over it until you find the corresponding element.
+
+
+IList<T> extends ICollection<T> (and thus it inherits all its properties) but in addition allows for directly accessing elements by index. It's an O(1) operation.
+List<T> is just a concrete implementation of the IList<T> interface.
+
+
+
+
+
+
+
+
+
+
+
+
+#What's the difference between an abstract class and an interface?
+
+
+There are technical differences between Abstract Classes and Interfaces, that being an Abstract Class can contain implementation of methods, fields, constructors, etc, while an Interface only contains method and property prototypes. A class can implement multiple interfaces, but it can only inherit one class (abstract or otherwise).
+
+However, in my opinion, the most important difference between Interfaces and Abstract Classes is the semantic difference.
+
+An Interface defines what something can do (how it behaves), and an Abstract Class defines what something is.
+
+Take for example IEnumerable, the semantic meaning behind this is that anything that implements IEnumerable is enumable, it doesn't mean that it's an enumeration, but that it can behave like one (can be enumerated).
+
+Contrast that with the washing machine example, anything that inherits it is a type of washing machine. Anything that inherits it would be a type of washing machine, a top loader, or side loader, etc.
+
+Instead, if you had an interface called ICanWash, which could contain a method called Wash. You could have various things implement ICanWash, be it a Person, an abstract washing machine class, etc, where the actual implementation does not matter, just you need to know that the behavior is that it can wash things.
+
+In summary, classes define what something is, interfaces define what something can do.
+
+
+
+
+
+
+
+
+
+
+
+#Boxing and Unboxing (C# Programming Guide)
+
+https://msdn.microsoft.com/en-us/library/yz2be5wk.aspx
+
+Boxing is the process of converting a value type to the type object or to any interface type implemented by this value type.
+ When the CLR boxes a value type, it wraps the value inside a System.Object and stores it on the managed heap.
+  Unboxing extracts the value type from the object. Boxing is implicit; unboxing is explicit.
+   The concept of boxing and unboxing underlies the C# unified view of the type system in which a value of any type can be treated as an object.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   #Difference between a Value Type and a Reference Type
+
+   The Types in .NET Framework are either treated by Value Type or by Reference Type.
+    A Value Type holds the data within its own memory allocation and a Reference Type contains a pointer to another memory location that holds the real data.
+	 Reference Type variables are stored in the heap while Value Type variables are stored in the stack.
+
+
+	 Value Type:
+
+A Value Type stores its contents in memory allocated on the stack. When you created a Value Type, a single space in memory is allocated to store the value and that variable directly holds a value. If you assign it to another variable, the value is copied directly and both variables work independently. Predefined datatypes, structures, enums are also value types, and work in the same way. Value types can be created at compile time and Stored in stack memory, because of this, Garbage collector can't access the stack.
+
+e.g.
+
+
+	int x = 10;
+
+
+	Reference Type:
+
+Reference Types are used by a reference which holds a reference (address) to the object but not the object itself. Because reference types represent the address of the variable rather than the data itself, assigning a reference variable to another doesn't copy the data. Instead it creates a second copy of the reference, which refers to the same location of the heap as the original value. Reference Type variables are stored in a different area of memory called the heap. This means that when a reference type variable is no longer used, it can be marked for garbage collection. Examples of reference types are Classes, Objects, Arrays, Indexers, Interfaces etc.
+
+e.g.
+
+
+	int[] iArray = new int[20];
+In the above code the space required for the 20 integers that make up the array is alloc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Difference between Classes and Structuresated on the heap.
+Technically speaking, structs and classes are almost equivalent, still there are many differences. The major difference like class provides the flexibility of combining data and methods (functions ) and it provides the re-usability called inheritance. Struct should typically be used for grouping data. The technical difference comes down to subtle issues about default visibility of members. Here you can see some of the Difference between Class and Structure.
+
+Class is pass-by-reference and Struct is pass-by-copy, it means that, Class is a reference type and its object is created on the heap memory where as structure is a value type and its object is created on the stack memory. More about .... Difference between a Value Type and a Reference Type
+
+Class can create a subclass that will inherit parent's properties and methods, whereas Structure does not support the inheritance.
+
+Choosing Between Class and Struct C# VB.Net
+
+A class has all members private by default. A struct is a class where members are public by default.
+
+Classes allow to perform cleanup (garbage collector) before object is deallocated because garbage collector works on heap memory. Objects are usually deallocated when instance is no longer referenced by other code. Structures can not be garbage collector so no efficient memory management.
+
+Sizeof empty class is 1 Byte where as Sizeof empty structure is 0 Bytes
+
+Structure vs class in C# VB.Net
+
+Classes are still fit for larger or complex objects and Structs are good for small, isolated model objects. Boxing and unboxing operations are used to convert between a struct type and object. Too much boxing and unboxing can have a negative impact on the heap, the garbage collector, and ultimately the performance of the application.
+
+In general, it's perfectly possible to create structs that look a lot like classes and classes that look a lot like structs.
+
+Which style you use depends on circumstances and taste. I usually prefer to use struct for classes that have all data public. I think of such classes as "not quite proper types, just data structures."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#What is the difference between explicit and implicit type casts?
+
+his is a little tricky because the "cast" syntax in C# actually does a range of different things (cast, primitive convert, bespoke convert, etc)
+
+In an implicit cast, there is an obvious reference-preserving conversion between the two:
+
+List<int> l = new List<int>();
+IList<int> il = l;
+The compiler can prove that this is safe just from static analysis (List<int> is always an IList<int>)
+
+With an explicit cast, either you are telling the compiler that you know more than it does - "please believe me, but check anyway":
+
+List<int> l = new List<int>();
+IList<int> il = l;
+List<int> l2 = (List<int>)il;
+Although this cast is possible, the compiler won't accept that all IList<int>s are actually List<int> - so we must tell it to let it by.
+
+In an implicit primitive conversion (providedby the language spec), it is generally assumed that there is a safe, non-risky, non-lossy (caveat: see Jon's comment) conversion:
+
+int i = 1;
+float f = i;
+With an explicit primitive conversion, it is likely that the conversion could lose data, or is non-obvious:
+
+float f = 1;
+int i = (int)f;
+With bespoke operators, all bets are off, and you'd have to look at the documentation. It could be a reference-cast, or it could be anything. It may follow similar rules to primitive conversions (example: decimal), or it could do anything randomly:
+
+XNamespace ns = "http://abc/def"; // implicit
+XAttribute attrib = GetAttrib();
+int i = (int)attrib; // explicit (extracts text from attrib value and
+                     // parses to an int)
+Both of these run custom code that is context-specific.
+
+
+
+
+
+
+
+
+#Delegate vs Action vs Func
+http://www.c-sharpcorner.com/blogs/delegate-vs-action-vs-func1
+ delegate, it is a class of reference type
+
+
+ Delegate, then Action, now Func. Action is a type of delegate that does not specifiy the types passed or returned. Func is unique but it is the only one where return type can be specified as part of its signature.
+
+Traditional way of using Delegate
+When we talk about delegate, it is a class of reference type used to encapsulate named or anonymous methods. For creating delegate we write,
+
+Delegate
+Now, using the delegate which is declared can be done as shown below:
+
+Delegate in c sharp
+
+Now C# had added a small wrapper to the delegate with the help of Action<in T> delegate.
+Action<T>
+
+This delegate was introduced in Framework 2.0. We can now use Action<in T> delegate to pass a method as a parameter without explicitly defining the delegate. The compiler will take care of it. This delegate can accept parameters but without a return type.
+
+define the delegate
+
+Call the delegate using act(4, 5)
+
+Func< T, TResult>
+
+This was introduced in Framework3.5. This delegate is different from Action<T> in the sense that it supports for return value.
+
+return value
+
+To call this delegate we can use
+
+Console.WriteLine(“Using Func<> :” + fn(6, 6));
+
+As it is returning the value. Hope you got the difference.
+
+
+
+
+
+
+
+
+
+
+
+C# Bit Operations
+The Bitwise operators supported by C# are listed in the following table. Assume variable A holds 60 and variable B holds 13, then:
+
+Operator	Description	Example
+&	Binary AND Operator copies a bit to the result if it exists in both operands.	(A & B) = 12, which is 0000 1100
+|	Binary OR Operator copies a bit if it exists in either operand.	(A | B) = 61, which is 0011 1101
+^	Binary XOR Operator copies the bit if it is set in one operand but not both.	(A ^ B) = 49, which is 0011 0001
+~	Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.	(~A ) = 61, which is 1100 0011 in 2's complement due to a signed binary number.
+<<	Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.	A << 2 = 240, which is 1111 0000
+>>	Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.	A >> 2 = 15, which is 0000 1111
+
+The idiom is to use the bitwise or-equal operator to set bits:
+
+flags |= 0x04;
+To clear a bit, the idiom is to use bitwise and with negation:
+
+flags &= ~0x04;
+Sometimes you have an offset that identifies your bit, and then the idiom is to use these combined with left-shift:
+
+flags |= 1 << offset;
+flags &= ~(1 << offset);
+
+
+#Constructors with parameters is to force the client to properly initialize the fully operational object.
+
+
+
+(fyi practice merge sort so you memorize, because it was a vicious fight today 11/30/2016)
+
+
+# Understanding the Dependencies, Covariance, and Contravariance
+
+
+
+>Less an object has to think about the less chances there are to make a mistake
+
+constructors set dependencies and state
+
+
+
+
+
+
+
+
+
+
+
+
+
+Default Values Table (C# Reference)
+
+Visual Studio 2015 Other Versions 
+ 
+Updated: July 20, 2015
+The following table shows the default values of value types returned by the default constructors. Default constructors are invoked by using the new operator, as follows:
+int myInt = new int();  
+
+The preceding statement has the same effect as the following statement:
+int myInt = 0;  
+
+Remember that using uninitialized variables in C# is not allowed.
+Value type	Default value
+bool	false
+byte	0
+char	'\0'
+decimal	0.0M
+double	0.0D
+enum	The value produced by the expression (E)0, where E is the enum identifier.
+float	0.0F
+int	0
+long	0L
+sbyte	0
+short	0
+struct	The value produced by setting all value-type fields to their default values and all reference-type fields to null.
+uint	0
+ulong	0
+ushort	0
+See Also
+C# Reference
+C# Programming Guide
+Value Types Table
+Value Types
+Built-In Types Table
+Reference Tables for Types

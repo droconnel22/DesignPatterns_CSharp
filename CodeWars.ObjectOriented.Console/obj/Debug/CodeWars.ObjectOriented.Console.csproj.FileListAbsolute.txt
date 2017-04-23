@@ -1,0 +1,4 @@
+C:\CodeWars\CodeWars.ObjectOriented.Console\bin\Debug\CodeWars.ObjectOriented.Console.dll
+C:\CodeWars\CodeWars.ObjectOriented.Console\bin\Debug\CodeWars.ObjectOriented.Console.pdb
+C:\CodeWars\CodeWars.ObjectOriented.Console\obj\Debug\CodeWars.ObjectOriented.Console.dll
+C:\CodeWars\CodeWars.ObjectOriented.Console\obj\Debug\CodeWars.ObjectOriented.Console.pdb

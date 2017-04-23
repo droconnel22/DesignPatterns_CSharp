@@ -1,0 +1,10 @@
+C:\CodeWars\CodeWars.CSharp.Tests\bin\Debug\CodeWars.CSharp.Tests.dll
+C:\CodeWars\CodeWars.CSharp.Tests\bin\Debug\CodeWars.CSharp.Tests.pdb
+C:\CodeWars\CodeWars.CSharp.Tests\bin\Debug\CodeWars.dll
+C:\CodeWars\CodeWars.CSharp.Tests\bin\Debug\nunit.framework.dll
+C:\CodeWars\CodeWars.CSharp.Tests\bin\Debug\CodeWars.pdb
+C:\CodeWars\CodeWars.CSharp.Tests\bin\Debug\CodeWars.dll.config
+C:\CodeWars\CodeWars.CSharp.Tests\bin\Debug\nunit.framework.xml
+C:\CodeWars\CodeWars.CSharp.Tests\obj\Debug\CodeWars.CSharp.Tests.csprojResolveAssemblyReference.cache
+C:\CodeWars\CodeWars.CSharp.Tests\obj\Debug\CodeWars.CSharp.Tests.dll
+C:\CodeWars\CodeWars.CSharp.Tests\obj\Debug\CodeWars.CSharp.Tests.pdb

@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipbob.Web", "Shipbob.Web\Shipbob.Web.csproj", "{2C9EA8A5-67E7-4DFE-8128-94DFCFD5C736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipbob.Data", "Shipbob.Data\Shipbob.Data.csproj", "{ACF39AB0-006E-4E53-BB0F-3619A6B395C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipbob.Service", "Shipbob.Service\Shipbob.Service.csproj", "{033078FF-9036-45AB-8FD7-94673E91F992}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{050E655F-9FD1-4C70-BBD6-FA0A9CF81D0D}"
+	ProjectSection(SolutionItems) = preProject
+		Instructions.txt = Instructions.txt
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipbob.Domain", "ShipBob.Domain\Shipbob.Domain.csproj", "{FE2F7330-10D5-4950-B5B3-4B391D117F3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shipbob.Test", "Shipbob.Test\Shipbob.Test.csproj", "{339D3033-A607-443A-9E1B-277232104EDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C9EA8A5-67E7-4DFE-8128-94DFCFD5C736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C9EA8A5-67E7-4DFE-8128-94DFCFD5C736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C9EA8A5-67E7-4DFE-8128-94DFCFD5C736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C9EA8A5-67E7-4DFE-8128-94DFCFD5C736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF39AB0-006E-4E53-BB0F-3619A6B395C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF39AB0-006E-4E53-BB0F-3619A6B395C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF39AB0-006E-4E53-BB0F-3619A6B395C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF39AB0-006E-4E53-BB0F-3619A6B395C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{033078FF-9036-45AB-8FD7-94673E91F992}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{033078FF-9036-45AB-8FD7-94673E91F992}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{033078FF-9036-45AB-8FD7-94673E91F992}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{033078FF-9036-45AB-8FD7-94673E91F992}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2F7330-10D5-4950-B5B3-4B391D117F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2F7330-10D5-4950-B5B3-4B391D117F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2F7330-10D5-4950-B5B3-4B391D117F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2F7330-10D5-4950-B5B3-4B391D117F3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339D3033-A607-443A-9E1B-277232104EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339D3033-A607-443A-9E1B-277232104EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339D3033-A607-443A-9E1B-277232104EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339D3033-A607-443A-9E1B-277232104EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://droconnel22.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Shipbob.Data\\Shipbob.Data.csproj
+		SccProjectName1 = Shipbob.Data
+		SccLocalPath1 = Shipbob.Data
+		SccProjectUniqueName2 = Shipbob.Service\\Shipbob.Service.csproj
+		SccProjectName2 = Shipbob.Service
+		SccLocalPath2 = Shipbob.Service
+		SccProjectUniqueName3 = Shipbob.Web\\Shipbob.Web.csproj
+		SccProjectName3 = Shipbob.Web
+		SccLocalPath3 = Shipbob.Web
+		SccProjectUniqueName4 = ShipBob.Domain\\Shipbob.Domain.csproj
+		SccProjectName4 = ShipBob.Domain
+		SccLocalPath4 = ShipBob.Domain
+		SccProjectUniqueName5 = Shipbob.Test\\Shipbob.Test.csproj
+		SccProjectName5 = Shipbob.Test
+		SccLocalPath5 = Shipbob.Test
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+C:\CodeWars\CodeWars.CSharp.UnderstandingConstructors\bin\Debug\CodeWars.CSharp.UnderstandingConstructors.dll
+C:\CodeWars\CodeWars.CSharp.UnderstandingConstructors\bin\Debug\CodeWars.CSharp.UnderstandingConstructors.pdb
+C:\CodeWars\CodeWars.CSharp.UnderstandingConstructors\obj\Debug\CodeWars.CSharp.UnderstandingConstructors.dll
+C:\CodeWars\CodeWars.CSharp.UnderstandingConstructors\obj\Debug\CodeWars.CSharp.UnderstandingConstructors.pdb

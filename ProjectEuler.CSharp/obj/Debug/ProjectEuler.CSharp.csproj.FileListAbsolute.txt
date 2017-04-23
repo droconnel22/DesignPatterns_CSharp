@@ -1,0 +1,5 @@
+C:\CodeWars\ProjectEuler.CSharp\bin\Debug\ProjectEuler.CSharp.dll
+C:\CodeWars\ProjectEuler.CSharp\bin\Debug\ProjectEuler.CSharp.pdb
+C:\CodeWars\ProjectEuler.CSharp\obj\Debug\ProjectEuler.CSharp.csprojResolveAssemblyReference.cache
+C:\CodeWars\ProjectEuler.CSharp\obj\Debug\ProjectEuler.CSharp.dll
+C:\CodeWars\ProjectEuler.CSharp\obj\Debug\ProjectEuler.CSharp.pdb
